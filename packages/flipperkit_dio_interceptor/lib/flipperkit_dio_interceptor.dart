@@ -16,13 +16,13 @@ class FlipperKitDioInterceptor extends InterceptorsWrapper {
   @override
   onRequest(RequestOptions options) {
     this._reportRequest(options);
-    return options;
+    return super.onRequest(options);
   }
 
   @override
   onResponse(Response response) {
     this._reportResponse(response);
-    return response;
+    return super.onResponse(response);
   }
 
   @override
@@ -30,7 +30,7 @@ class FlipperKitDioInterceptor extends InterceptorsWrapper {
     if (err.response != null) {
       this._reportResponse(err.response);
     }
-    return err;
+    return super.onError(err);
   }
 
   void _reportRequest(RequestOptions options) {
@@ -52,7 +52,8 @@ class FlipperKitDioInterceptor extends InterceptorsWrapper {
     Map<String, dynamic> headers = new Map();
     response.headers.forEach((String name, List<String> values) {
       if (values != null && values.length > 0) {
-        headers.putIfAbsent(name, () => values.length == 1 ? values[0] : values);
+        headers.putIfAbsent(
+            name, () => values.length == 1 ? values[0] : values);
       }
     });
 
