@@ -5,16 +5,19 @@ author: JianyingLi <lijy91@foxmail.com>
 homepage: https://github.com/blankapp/flutter_flipperkit_plugins
 
 environment:
-  sdk: ">=2.0.0-dev.28.0 <3.0.0"
-  flutter: ">=0.1.4 <2.0.0"
+  sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_flipperkit: ^0.0.23
+  flutter_flipperkit:
+    git:
+      url: git://github.com/prtm/flutter_flipperkit.git
+      ref: master
   redux: any
-  uuid: ^2.0.0
+  uuid: ^2.2.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+

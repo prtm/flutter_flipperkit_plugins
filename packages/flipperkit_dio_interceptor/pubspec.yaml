@@ -11,10 +11,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dio: ^3.0.9
-  flutter_flipperkit: ^0.0.23
-  uuid: ^2.0.0
+  dio: ^3.0.10
+  flutter_flipperkit:
+    git:
+      url: git://github.com/prtm/flutter_flipperkit.git
+      ref: master
+  uuid: ^2.2.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
