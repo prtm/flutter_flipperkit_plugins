@@ -1,7 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flipperkit_sqflite_driver/flipperkit_sqflite_driver.dart';
-
 void main() {
   test('adds one to input values', () {
     // final calculator = Calculator();
