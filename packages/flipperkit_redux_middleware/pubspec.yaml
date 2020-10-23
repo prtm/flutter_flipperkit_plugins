@@ -10,10 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_flipperkit:
-    git:
-      url: git://github.com/prtm/flutter_flipperkit.git
-      ref: master
+  flutter_flipperkit: ^0.0.24
   redux: any
   uuid: ^2.2.2
 

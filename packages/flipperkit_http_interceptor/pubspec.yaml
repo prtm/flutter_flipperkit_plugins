@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_flipperkit: ^0.0.23
+  flutter_flipperkit: ^0.0.24
   http: any
   uuid: ^2.0.0
 

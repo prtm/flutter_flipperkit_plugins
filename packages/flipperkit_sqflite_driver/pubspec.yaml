@@ -11,10 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_flipperkit:
-    git:
-      url: git://github.com/prtm/flutter_flipperkit.git
-      ref: master
+  flutter_flipperkit: ^0.0.24
   sqflite: ^1.3.1+1
 
 dev_dependencies:
